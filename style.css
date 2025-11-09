@@ -1,0 +1,39 @@
+/* style.css */
+:root {
+--bg: #0b0f16;
+--card: #0f1720;
+--muted: #9aa6b2;
+--accent: #39ff9a;
+--accent-2: #6be7ff;
+--glass: rgba(255, 255, 255, 0.03);
+--mono: 'Courier New', monospace;
+}
+
+
+body {
+margin: 0;
+background: radial-gradient(1200px 400px at 10% 10%, rgba(59,130,246,0.05), transparent),
+linear-gradient(180deg, #061017 0%, var(--bg) 100%);
+font-family: Inter, system-ui;
+color: #e6eef6;
+padding: 32px;
+}
+
+
+.container { max-width: 1100px; margin: 0 auto; }
+header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 28px; }
+.logo { width: 56px; height: 56px; border-radius: 12px; background: linear-gradient(135deg,var(--accent),var(--accent-2)); display: grid; place-items: center; font-family: var(--mono); font-weight: 700; color: #021018; }
+.subtitle { color: var(--muted); font-size: 13px; }
+nav a { color: var(--muted); margin-left: 18px; text-decoration: none; font-size: 14px; }
+nav a:hover { color: var(--accent); }
+
+
+.hero { display: grid; grid-template-columns: 1fr 360px; gap: 28px; align-items: center; }
+.hero-card { background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent); padding: 28px; border-radius: 14px; border: 1px solid rgba(255,255,255,0.03); }
+.name { font-size: 28px; margin: 0 0 6px; }
+.role { color: var(--muted); margin: 0 0 16px; }
+.bio { line-height: 1.5; color: #cfe9f8; }
+.cta { display: flex; gap: 12px; margin-top: 18px; }
+.btn { background: transparent; border: 1px solid rgba(255,255,255,0.06); padding: 10px 14px; border-radius: 10px; color: var(--accent); font-weight: 600; text-decoration: none; }
+.btn.secondary { color: var(--muted); }
+
